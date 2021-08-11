@@ -20,7 +20,10 @@ def comp_choice():
 v = ["Rock", "Scissors", "Paper"]
 while True:
     user_choice = input('Type "Rock", "Scissors" or "Paper": ')
-    if user_choice not in v:
+    if user_choice == "Exit":
+        print("Гудбай, май френд")
+        break
+    elif user_choice not in v:
         print("Бан")
         continue
     comp_choice()

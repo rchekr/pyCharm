@@ -17,5 +17,10 @@ def comp_choice():
     print("Computer choice is: " + computer_choice)
     compare(user_choice, computer_choice)
 
-user_choice = input('Type "Rock", "Scissors" or "Paper": ')
-comp_choice()
+v = ["Rock", "Scissors", "Paper"]
+while True:
+    user_choice = input('Type "Rock", "Scissors" or "Paper": ')
+    if user_choice not in v:
+        print("Бан")
+        continue
+    comp_choice()
